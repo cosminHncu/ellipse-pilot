@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.moving-text {
+  white-space: nowrap;
+  animation: moveText 5s linear infinite;
+  font-size: 15rem;
+  color: blue;
+  margin: 0;
+  padding: 0;
+  transform: rotate(90deg); /* Change to 0 degrees rotation */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%); /* Change translateX to translateY */
+  }
+  100% {
+    transform: translateX(100%); /* Change translateX to translateY */
+  }
+}
